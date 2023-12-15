@@ -14,15 +14,18 @@ In order to successfully complete the project, the following steps will be taken
 1. Create Get Pictures microservice in Flask  
     - Create CRUD endpoints for picture as a resource.   
     - Create health endpoint for the microservice.
+      
 2. Create Get Songs microservice in Flask 
     - Set up MongoDB database.  
     - Implement the service to retrieve song lyrics from the database.  
     - Create health endpoint for the microservice.
+      
 3. Create the Main Application in Django  
 - Create the concert model.
 - Use the built in Django user model. 
 - Migrate the model to create tables in the SQLite database. 
 - Implement controllers to send data to pre-defined templates.
+  
 4. Deploy the services and application  
 - Deploy Get Pictures to IBM Code Engine.
 - Deploy Get Songs and MongoDB to Redhat OpenShift.  
@@ -33,16 +36,22 @@ In order to successfully complete the project, the following steps will be taken
 ![Architecture](https://d3c33hcgiwev3.cloudfront.net/imageAssetProxy.v1/Vy5tmLkrTAKXylRYbaAO5w_81e966381c9a4d7cb82ecc32b03c23f1_image.png?expiry=1702771200000&hmac=3LXIWxKhBqnlhgrivc0oWS766T3u6KDtHyzwGw72yEk)
 
 1. User visits the Django Website home page.
+   
 Anonymous use cases:
-2. The song page shows songs and lyrics.
-3. The pictures page shows pictures from past concerts.
+
+3. The song page shows songs and lyrics.
+4. The pictures page shows pictures from past concerts.
+   
 Admin use cases:
-4. Let the admin user change the concert date.
+
+6. Let the admin user change the concert date.
+   
 Signed in use cases:
-1. The user signs into the application.
-2. The user is able to see their concerts.
-3. The user is able to book a concert.
-4. The user is able to delete their reservation.  
+
+7. The user signs into the application.
+8. The user is able to see their concerts.
+9. The user is able to book a concert.
+10. The user is able to delete their reservation.  
 
 # Procedure
 
@@ -66,7 +75,7 @@ Signed in use cases:
     python manage.py makemigrations
     python manage.py migrate
     ```
-
+    
 8.  Run server successfully this time: `python manage.py runserver`
 9.  Launch Application
 10. Click on Songs and Photos
